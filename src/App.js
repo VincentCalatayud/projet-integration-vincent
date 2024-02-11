@@ -1,17 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
+import FormRegister from "./components/formregister/FormRegister.js";
 
 function App() {
-  let [count, setCount] = useState(0);
-  const clickOnMe = () => {
-    setCount(count + 1);
-  };
-
   return (
     <>
-      <button onClick={clickOnMe}>Click me</button>
-      <span data-testid="count">{count}</span>
+      <FormRegister />
     </>
   );
 }
