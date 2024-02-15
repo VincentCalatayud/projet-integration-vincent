@@ -142,7 +142,7 @@ function FormRegister() {
         inputProps={{ "data-testid": "email" }}
         error={formErrorField.email ? true : false}
         type="email"
-        label="Email"
+        label="E-mail"
         helperText={formErrorField.email}
         variant="filled"
         value={user.email}
