@@ -13,7 +13,7 @@ function FormRegister() {
   const [toaster, setToaster] = useState({ message: "", status: "" });
 
   const alertStyle = {
-    backgroundColor: toaster.status == "success" ? "green" : "#ffcccc",
+    backgroundColor: toaster.status === "success" ? "green" : "#ffcccc",
     width: "100%",
   };
 
