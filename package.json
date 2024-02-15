@@ -21,7 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --silent=false --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/reportWebVitals.js --collectCoverageFrom=!src/index.js --watchAll=false",
     "eject": "react-scripts eject",
-    "generate-docs": "jsdoc -r src -d docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
