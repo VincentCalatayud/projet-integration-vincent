@@ -48,6 +48,8 @@ jobs:
         run: |
           git config --global user.email "vincentcalatayud31@gmail.com"
           git config --global user.name "VincentCalatayud"
+          git add . && git commit -am "new version"
+          npm version patch
           git tag v0.1.0-${{ github.run_id }}${{ github.run_number }}${{ github.run_attempt }} -a -m "build number ${{ github.run_number }}"
           npm version from-git --allow-same-version
   
