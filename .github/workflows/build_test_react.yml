@@ -52,7 +52,7 @@ jobs:
           npm version patch
           git tag v0.1.0-${{ github.run_id }}${{ github.run_number }}${{ github.run_attempt }} -a -m "build number ${{ github.run_number }}"
           npm version from-git --allow-same-version
-          echo ${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }} >> README.md
+          echo README version-${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }} >> README.md
           git add .
           git commit -am "update readme with version"
           git push
